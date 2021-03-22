@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "pry/clipboard"
+require "pry-pasteboard"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

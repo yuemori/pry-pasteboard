@@ -1,6 +1,6 @@
-RSpec.describe Pry::Clipboard do
+RSpec.describe PryPasteboard do
   it "has a version number" do
-    expect(Pry::Clipboard::VERSION).not_to be nil
+    expect(PryPasteboard::VERSION).not_to be nil
   end
 
   it "does something useful" do

@@ -1,11 +1,11 @@
 require 'pry' unless defined?(::Pry)
 require 'clipboard'
 
-module PryClipboard
+module PryPasteboard
   Commands = Pry::CommandSet.new do
-    create_command "clip", "Copy result to clipboard" do
+    create_command "pbcopy", "Copy result to clipboard" do
       banner <<-BANNER
-      Usage: clip <evaluator>
+      Usage: pbcopy <evaluator>
       BANNER
 
       def process
@@ -15,4 +15,4 @@ module PryClipboard
   end
 end
 
-Pry.config.commands.import PryClipboard::Commands
+Pry.config.commands.import PryPasteboard::Commands

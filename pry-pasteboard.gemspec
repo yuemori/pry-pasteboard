@@ -1,18 +1,20 @@
+require_relative "lib/pry-pasteboard/version"
+
 Gem::Specification.new do |spec|
-  spec.name          = "pry-clipboard"
-  spec.version       = "0.1.2"
+  spec.name          = "pry-pasteboard"
+  spec.version       = PryPasteboard::VERSION
   spec.authors       = ["yuemori"]
   spec.email         = ["moonoverwalker@gmail.com"]
 
   spec.summary       = %q{Copy result to clipboard for Pry}
   spec.description   = %q{Copy result to clipboard for Pry}
-  spec.homepage      = "https://github.com/yuemori/pry-clipboard"
+  spec.homepage      = "https://github.com/yuemori/pry-pasteboard"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/yuemori/pry-clipboard"
-  spec.metadata["changelog_uri"] = "https://github.com/yuemori/pry-clipboard/blob/master/CHANGELOG.md"
+  spec.metadata["source_code_uri"] = "https://github.com/yuemori/pry-pasteboard"
+  spec.metadata["changelog_uri"] = "https://github.com/yuemori/pry-pasteboard/blob/master/CHANGELOG.md"
 
   spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
