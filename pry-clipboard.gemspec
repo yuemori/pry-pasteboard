@@ -1,8 +1,6 @@
-require_relative 'lib/pry-clipboard/version'
-
 Gem::Specification.new do |spec|
   spec.name          = "pry-clipboard"
-  spec.version       = PryClipboard::VERSION
+  spec.version       = "0.1.1"
   spec.authors       = ["yuemori"]
   spec.email         = ["moonoverwalker@gmail.com"]
 
@@ -24,5 +22,6 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "clipboard"
+  spec.add_runtime_dependency 'pry'
+  spec.add_runtime_dependency "clipboard"
 end
