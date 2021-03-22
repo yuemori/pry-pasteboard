@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "pry-clipboard"
-  spec.version       = "0.1.1"
+  spec.version       = "0.1.2"
   spec.authors       = ["yuemori"]
   spec.email         = ["moonoverwalker@gmail.com"]
 
